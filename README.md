@@ -25,8 +25,6 @@ Um aplicativo simples em **Jetpack Compose** para cadastro de jogos, exibindo se
 
 ---
 
----
-
 ## Uso
 
 1. Abra o app.  
