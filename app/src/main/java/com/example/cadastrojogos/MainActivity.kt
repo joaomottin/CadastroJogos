@@ -104,6 +104,7 @@ fun TelaPrincipal(jogos: MutableList<Game>, onIrParaDetalhes: () -> Unit) {
         Row(verticalAlignment = Alignment.CenterVertically) {
         Button(onClick = {
             val launch = anoLancamento.toIntOrNull()
+            // Verificações básicas
             if (titulo.isNotBlank() && genero.isNotBlank() && launch != null && launch >= 1952 && launch <= 2025) {
                 jogos.add(Game(System.currentTimeMillis(), titulo, genero, launch))
                 titulo = ""
@@ -133,7 +134,7 @@ fun TelaPrincipal(jogos: MutableList<Game>, onIrParaDetalhes: () -> Unit) {
         Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = onIrParaDetalhes) {
-            Text("Ir para tela Detalhes", fontSize = 18.sp)
+            Text("Detalhes", fontSize = 18.sp)
         }
     }
 }
@@ -152,9 +153,9 @@ fun TelaDetalhes(jogos: List<Game>, onVoltarParaPrincipal: () -> Unit) {
 
         LazyColumn(modifier = Modifier.fillMaxWidth()) {
             items(jogos) { jogo ->
-                Text("Título: ${jogo.titulo}")
-                Text("Gênero: ${jogo.genero}")
-                Text("Ano: ${jogo.anoLancamento}")
+                Text("Título: " + jogo.titulo)
+                Text("Gênero: " + jogo.genero)
+                Text("Ano: "  + jogo.anoLancamento)
                 Spacer(modifier = Modifier.height(8.dp))
             }
         }
