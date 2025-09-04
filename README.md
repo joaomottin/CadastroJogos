@@ -27,15 +27,16 @@ Um aplicativo simples em **Jetpack Compose** para cadastro de jogos, exibindo se
 
 ## Uso
 
-1. Abra o app.  
-2. Na **Tela Principal**, preencha os campos:  
+1. Clone o repositório.
+2. Acesse o caminho "app/src/main/java/com/example/cadastrojogos/MainActivity.kt"
+3. Na **Tela Principal**, preencha os campos:  
    - Título do jogo  
    - Gênero do jogo  
    - Ano de lançamento  
-3. Clique em **Adicionar** para incluir o jogo na lista.  
-4. A lista exibirá todos os títulos adicionados.  
-5. Clique em **Ir para tela 'Detalhes'** para ver mais informações de todos os jogos cadastrados.  
-6. Clique em **Voltar** para retornar à Tela Principal.
+4. Clique em **Adicionar** para incluir o jogo na lista.  
+5. A lista exibirá todos os títulos adicionados.  
+6. Clique em **Ir para tela 'Detalhes'** para ver mais informações de todos os jogos cadastrados.  
+7. Clique em **Voltar** para retornar à Tela Principal.
 
 ---
 
